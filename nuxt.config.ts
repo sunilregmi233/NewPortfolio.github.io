@@ -1,11 +1,8 @@
 export default defineNuxtConfig({
-  ssr: false,
-  // plugins: [
-  //   '~/plugins/climate-clock.js'
-  // ],
-  experimental: {
-    payloadExtraction: true
-  },
+
+  // experimental: {
+  //   payloadExtraction: true
+  // },
   devtools: { enabled: true },
   modules: [
     "@nuxt/ui",
