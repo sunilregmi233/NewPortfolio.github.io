@@ -1,0 +1,1 @@
+.typewriter h1{animation:typing 3.5s steps(40) forwards,blink-caret .75s step-end 3.5s infinite;font-size:20px;letter-spacing:.15em;margin:0 auto;overflow:hidden;white-space:nowrap}@keyframes typing{0%{width:0}to{width:100%}}@keyframes blink-caret{0%,to{border-color:transparent}}
