@@ -1,12 +1,13 @@
 <template>
   <div class="space-y-6 ">
-     <div class="text-center typewriter">
+    <climate-clock />
+    <div class="text-center typewriter">
           <!-- <h1 class="text-2xl md:text-4xl lg:text-5xl xl:text-6xl">Greetings,</h1>
           <h1 class="text-2xl md:text-4xl lg:text-5xl xl:text-6xl">I am Sunil Regmi...</h1> -->
           <h1 class="text-2xl md:text-4xl lg:text-5xl xl:text-6xl">This site is under Construction.</h1>
         </div>
     <div class="flex justify-center">
-      <NuxtImg src="/pp.jpg" alt="Sunil Regmi"
+      <img src="assets/pp.jpg" alt="Sunil Regmi"
       class="ring-2 border ring-gray-200 border-gray-300 dark:ring-white/10 dark:border-gray-800 hover:ring-4 transition-all duration-300 bg-gray-200 dark:bg-gray-900 rounded-full h-12 w-12 h-40 w-40 hover:scale-110"
       sizes="48px sm:64px" placeholder format="webp" />
     </div>
@@ -30,9 +31,10 @@
     &emsp;
       By day, I'm a AI Research and Developer at
       <a href="https://www.gdlabs.org.np/" target="_blank" class="underline">Green Decisions Labs and Research</a>, and
-      by night (and weekends), I am a freelancer, self-learner, musician and composer.
+      by night (and weekends), I am a freelancer, self-learner, musician and a composer.
     </p>
   </div>
+
 </template>
 
 <script setup>
@@ -41,6 +43,8 @@ useSeoMeta({
   description:
   "Hi, I'am Sunil Regmi, skilled IT professional with a Master's in Information Technology, specializing in AI and full-stack web development, currently working as an AI Researcher at Green Decisions Labs while pursuing freelance projects and interests in music."
 });
+
+
 </script>
 
 

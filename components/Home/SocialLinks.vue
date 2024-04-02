@@ -40,7 +40,7 @@ const links = [
     icon: "mdi:linkedin",
   },
   {
-    name: "Telegram",
+    name: "Instagram",
     url: "https://www.instagram.com/__su.re/",
     icon: "mdi:instagram",
   },

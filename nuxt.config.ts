@@ -1,4 +1,11 @@
 export default defineNuxtConfig({
+  ssr: false,
+  // plugins: [
+  //   '~/plugins/climate-clock.js'
+  // ],
+  experimental: {
+    payloadExtraction: true
+  },
   devtools: { enabled: true },
   modules: [
     "@nuxt/ui",
@@ -14,8 +21,16 @@ export default defineNuxtConfig({
     icons: ["heroicons", "lucide"],
   },
   app: {
+    // baseURL: '/sunilregmi233.com.np/', // baseURL: '/<repository>/'
+    buildAssetsDir: 'assets',
     pageTransition: { name: "page", mode: "out-in" },
     head: {
+      script: [
+        {
+          src: 'https://climateclock.world/widget-v2.js',
+          async: true,
+        }
+      ],
       htmlAttrs: {
         lang: "en",
         class: "h-full",
