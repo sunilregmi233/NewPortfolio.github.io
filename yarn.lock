@@ -448,6 +448,11 @@
   resolved "https://registry.npmjs.org/@headlessui/vue/-/vue-1.7.16.tgz"
   integrity sha512-nKT+nf/q6x198SsyK54mSszaQl/z+QxtASmgMEJtpxSX2Q0OPJX0upS/9daDyiECpeAsvjkoOrm2O/6PyBQ+Qg==
 
+"@huggingface/jinja@^0.2.2":
+  version "0.2.2"
+  resolved "https://registry.npmjs.org/@huggingface/jinja/-/jinja-0.2.2.tgz"
+  integrity sha512-/KPde26khDUIPkTGU82jdtTW9UAuvUTumCAbFs/7giR0SxsvZC4hru51PBvpijH6BVkHcROcvZM/lpy5h1jRRA==
+
 "@iconify-json/heroicons@^1.1.15":
   version "1.1.16"
   resolved "https://registry.npmjs.org/@iconify-json/heroicons/-/heroicons-1.1.16.tgz"
@@ -1562,6 +1567,11 @@
   dependencies:
     "@types/node" "*"
 
+"@types/long@^4.0.1":
+  version "4.0.2"
+  resolved "https://registry.npmjs.org/@types/long/-/long-4.0.2.tgz"
+  integrity sha512-MqTGEo5bj5t157U6fA/BiDynNkn0YknVdh48CMPkTSpFTVmvao5UQmm7uEF6xBEo7qIMAlY/JSleYaE6VOdpaA==
+
 "@types/mdast@^4.0.0", "@types/mdast@^4.0.2", "@types/mdast@^4.0.3":
   version "4.0.3"
   resolved "https://registry.npmjs.org/@types/mdast/-/mdast-4.0.3.tgz"
@@ -2172,6 +2182,17 @@
   integrity sha512-Uud2IWncmAfJvRaFYzv5OHDli+FbOzxiVEQdLCKQKLyhz94PIyFC3CHcH7EDMwIn8NPtD06+PNbC/PiO0LGLtw==
   dependencies:
     vue-demi ">=0.14.7"
+
+"@xenova/transformers@^2.16.1":
+  version "2.16.1"
+  resolved "https://registry.npmjs.org/@xenova/transformers/-/transformers-2.16.1.tgz"
+  integrity sha512-p2ii7v7oC3Se0PC012dn4vt196GCroaN5ngOYJYkfg0/ce8A5frsrnnnktOBJuejG3bW5Hreb7JZ/KxtUaKd8w==
+  dependencies:
+    "@huggingface/jinja" "^0.2.2"
+    onnxruntime-web "1.14.0"
+    sharp "^0.32.0"
+  optionalDependencies:
+    onnxruntime-node "1.14.0"
 
 abbrev@^2.0.0:
   version "2.0.0"
@@ -4995,6 +5016,11 @@ lodash@^4.17.14, lodash@^4.17.15:
   resolved "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
+long@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.npmjs.org/long/-/long-4.0.0.tgz"
+  integrity sha512-XsP+KhQif4bjX1kbuSiySJFNAehNxgLb6hPRGJ9QsUr8ajHkuXGdrHmFUTUUXhDwVX2R5bY4JNZEwbUiMhV+MA==
+
 long@^5.0.0, long@^5.2.3:
   version "5.2.3"
   resolved "https://registry.npmjs.org/long/-/long-5.2.3.tgz"
@@ -6255,10 +6281,29 @@ only@~0.0.2:
   resolved "https://registry.npmjs.org/only/-/only-0.0.2.tgz"
   integrity sha512-Fvw+Jemq5fjjyWz6CpKx6w9s7xxqo3+JCyM0WXWeCSOboZ8ABkyvP8ID4CZuChA/wxSx+XSJmdOm8rGVyJ1hdQ==
 
+onnx-proto@^4.0.4:
+  version "4.0.4"
+  resolved "https://registry.npmjs.org/onnx-proto/-/onnx-proto-4.0.4.tgz"
+  integrity sha512-aldMOB3HRoo6q/phyB6QRQxSt895HNNw82BNyZ2CMh4bjeKv7g/c+VpAFtJuEMVfYLMbRx61hbuqnKceLeDcDA==
+  dependencies:
+    protobufjs "^6.8.8"
+
+onnxruntime-common@~1.14.0:
+  version "1.14.0"
+  resolved "https://registry.npmjs.org/onnxruntime-common/-/onnxruntime-common-1.14.0.tgz"
+  integrity sha512-3LJpegM2iMNRX2wUmtYfeX/ytfOzNwAWKSq1HbRrKc9+uqG/FsEA0bbKZl1btQeZaXhC26l44NWpNUeXPII7Ew==
+
 onnxruntime-common@1.17.1:
   version "1.17.1"
   resolved "https://registry.npmjs.org/onnxruntime-common/-/onnxruntime-common-1.17.1.tgz"
   integrity sha512-6wLNhpn+1hnsKN+jq6ulqUEJ61TdRmyFkGCvtRNnZkAupH8Yfr805UeNxjl9jtiX9B1q48pq6Q/67fEFpxT7Dw==
+
+onnxruntime-node@1.14.0:
+  version "1.14.0"
+  resolved "https://registry.npmjs.org/onnxruntime-node/-/onnxruntime-node-1.14.0.tgz"
+  integrity sha512-5ba7TWomIV/9b6NH/1x/8QEeowsb+jBEvFzU6z0T4mNsFwdPqXeFUM7uxC6QeSRkEbWu3qEB0VMjrvzN/0S9+w==
+  dependencies:
+    onnxruntime-common "~1.14.0"
 
 onnxruntime-web@^1.14.0:
   version "1.17.1"
@@ -6271,6 +6316,18 @@ onnxruntime-web@^1.14.0:
     onnxruntime-common "1.17.1"
     platform "^1.3.6"
     protobufjs "^7.2.4"
+
+onnxruntime-web@1.14.0:
+  version "1.14.0"
+  resolved "https://registry.npmjs.org/onnxruntime-web/-/onnxruntime-web-1.14.0.tgz"
+  integrity sha512-Kcqf43UMfW8mCydVGcX9OMXI2VN17c0p6XvR7IPSZzBf/6lteBzXHvcEVWDPmCKuGombl997HgLqj91F11DzXw==
+  dependencies:
+    flatbuffers "^1.12.0"
+    guid-typescript "^1.0.9"
+    long "^4.0.0"
+    onnx-proto "^4.0.4"
+    onnxruntime-common "~1.14.0"
+    platform "^1.3.6"
 
 open@^10.0.3:
   version "10.1.0"
@@ -6915,6 +6972,25 @@ property-information@^6.0.0, property-information@^6.4.1:
   resolved "https://registry.npmjs.org/property-information/-/property-information-6.4.1.tgz"
   integrity sha512-OHYtXfu5aI2sS2LWFSN5rgJjrQ4pCy8i1jubJLe2QvMF8JJ++HXTUIVWFLfXJoaOfvYYjk2SN8J2wFUWIGXT4w==
 
+protobufjs@^6.8.8:
+  version "6.11.4"
+  resolved "https://registry.npmjs.org/protobufjs/-/protobufjs-6.11.4.tgz"
+  integrity sha512-5kQWPaJHi1WoCpjTGszzQ32PG2F4+wRY6BmAT4Vfw56Q2FZ4YZzK20xUYQH4YkfehY1e6QSICrJquM6xXZNcrw==
+  dependencies:
+    "@protobufjs/aspromise" "^1.1.2"
+    "@protobufjs/base64" "^1.1.2"
+    "@protobufjs/codegen" "^2.0.4"
+    "@protobufjs/eventemitter" "^1.1.0"
+    "@protobufjs/fetch" "^1.1.0"
+    "@protobufjs/float" "^1.0.2"
+    "@protobufjs/inquire" "^1.1.0"
+    "@protobufjs/path" "^1.1.2"
+    "@protobufjs/pool" "^1.1.0"
+    "@protobufjs/utf8" "^1.1.0"
+    "@types/long" "^4.0.1"
+    "@types/node" ">=13.7.0"
+    long "^4.0.0"
+
 protobufjs@^7.2.4:
   version "7.2.6"
   resolved "https://registry.npmjs.org/protobufjs/-/protobufjs-7.2.6.tgz"
@@ -7395,7 +7471,7 @@ setprototypeof@1.2.0:
   resolved "https://registry.npmjs.org/setprototypeof/-/setprototypeof-1.2.0.tgz"
   integrity sha512-E5LDX7Wrp85Kil5bhZv46j8jOeboKq5JMmYM3gVGdGH8xFpPWXUMsNrlODCrkoxMEeNi/XZIwuRvY4XNwYMJpw==
 
-sharp@^0.32.6:
+sharp@^0.32.0, sharp@^0.32.6:
   version "0.32.6"
   resolved "https://registry.npmjs.org/sharp/-/sharp-0.32.6.tgz"
   integrity sha512-KyLTWwgcR9Oe4d9HwCwNM2l7+J0dUQwn/yf7S0EnTtb0eVS4RxO0eUSvxPtzT4F3SY+C4K6fqdv/DO27sJ/v/w==
@@ -8679,6 +8755,11 @@ vue-virtual-scroller@2.0.0-beta.8:
     "@vue/runtime-dom" "3.4.21"
     "@vue/server-renderer" "3.4.21"
     "@vue/shared" "3.4.21"
+
+wavefile@^11.0.0:
+  version "11.0.0"
+  resolved "https://registry.npmjs.org/wavefile/-/wavefile-11.0.0.tgz"
+  integrity sha512-/OBiAALgWU24IG7sC84cDO/KfFuvajWc5Uec0oV2zrpOOZZDgGdOwHwgEzOrwh8jkubBk7PtZfQBIcI1OaE5Ng==
 
 web-namespaces@^2.0.0:
   version "2.0.1"

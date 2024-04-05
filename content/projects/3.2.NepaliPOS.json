@@ -1,0 +1,7 @@
+{
+  "name": "Nepali Parts-of-Speech Tagging",
+  "url": "https://huggingface.co/sunilregmi/NepSpellChecker",
+  "description": "Nepali POS using LLM's",
+  "thumbnail": "/projects/pb-nuxt.png",
+  "status": "Active"
+}

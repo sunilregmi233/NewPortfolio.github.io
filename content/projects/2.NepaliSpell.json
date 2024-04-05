@@ -1,0 +1,7 @@
+{
+  "name": "Nepali Spell Checker",
+  "url": "https://huggingface.co/sunilregmi/NepSpellChecker",
+  "description": "Nepali Spell checker using Seq2Seq model",
+  "thumbnail": "/projects/feedful.png",
+  "status": "Active"
+}

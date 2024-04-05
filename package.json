@@ -26,7 +26,9 @@
     "@nuxt/image": "1.1.0",
     "@nuxt/ui": "2.11.1",
     "@ricky0123/vad-web": "^0.0.17",
+    "@xenova/transformers": "^2.16.1",
     "gh-pages": "^6.1.1",
-    "vue-use-fixed-header": "^2.0.0"
+    "vue-use-fixed-header": "^2.0.0",
+    "wavefile": "^11.0.0"
   }
 }

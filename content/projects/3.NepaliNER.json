@@ -1,0 +1,7 @@
+{
+  "name": "Nepali Name Entity Recognition",
+  "url": "https://huggingface.co/sunilregmi/NepSpellChecker",
+  "description": "Nepali NER using LLM's",
+  "thumbnail": "/projects/hawa.png",
+  "status": "Active"
+}

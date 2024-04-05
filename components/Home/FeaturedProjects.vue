@@ -19,6 +19,7 @@
       />
     </div>
   </div>
+  <br><hr>
 </template>
 
 <script lang="ts" setup>
